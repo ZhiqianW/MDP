@@ -57,7 +57,7 @@ public class transition {
         else
             northState = new state(x - 1, y, gamegrid);
 
-        if (y == 5) {
+        if (y == (gamegrid.n - 1)) {
             eastState = new state(x, y, gamegrid);
         } else if (gamegrid.getstatev(x, y + 1).equals("-")) {
             eastState = new state(x, y, gamegrid);
@@ -65,7 +65,7 @@ public class transition {
             eastState = new state(x, y + 1, gamegrid);
         }
 
-        if (x == 15) {
+        if (x == (gamegrid.m - 1)) {
             southState = new state(x, y, gamegrid);
         } else if (gamegrid.getstatev(x + 1, y).equals("-")) {
             southState = new state(x, y, gamegrid);

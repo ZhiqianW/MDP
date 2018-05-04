@@ -9,9 +9,9 @@ public class reward {
     public reward(state State) {
         this.State = State;
         if (State.getstateValue().equals("1000"))
-            this.Reward = 1;
+            this.Reward = 1000;
         else if (State.getstateValue().equals("-800"))
-            this.Reward = -1;
+            this.Reward = -800;
         else if (State.getstateValue().equals("0"))
             this.Reward = -0.01;
         else
